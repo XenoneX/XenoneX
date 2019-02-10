@@ -1,0 +1,80 @@
+//output:product.html
+- var url = "product"
+doctype html
+html(lang='en', dir='ltr')
+  head
+    meta(charset='utf-8')
+    title Главная страница
+    link(rel='stylesheet', href='css/styles.css')
+  body
+    .container
+      include ./navbar.jade
+      .body
+        .menu-links
+          .links-wrapper
+            ul
+              li
+                a.active(href="#") Все
+              li
+                a(href="#") Дом
+              li
+                a(href="#") Офис
+              li
+                a(href="#") Мебель
+              li
+                a(href="#") Современное
+              li
+                a(href="#") Классическое
+        .product-info.row
+          .half
+            .product-image
+              img(alt="picture", width=570, height=570, src="img/slider1.jpg")
+            .product-thumbs-list
+              ul
+                li
+                  img(alt="picture", width=70, height=70, src="img/controll11.jpg")
+                li
+                  img(alt="picture", width=70, height=70, src="img/controll2.jpg")
+                li
+                  img(alt="picture", width=70, height=70, src="img/controll.jpg")
+          .half
+            h2.product-title Стул
+            h3.tag Горячее проедложение
+            p.price
+              span.sign &#8381;
+              span.count=" 124.35 "
+              span.measures за шт.
+            a.btn(href="#") Заказать
+            .description
+              p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae. 
+              p Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+        .production-catalog.row.last-child
+          .row-header
+            h2.title Популярные продукты
+            .right-link
+              a(href="products.html") Просмотреть еще
+          .row-content
+            .product-gallery
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-11.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Лампа
+                  p.hover-details
+                    Просто лампа, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-21.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Стул
+                  p.hover-details
+                    Просто стул, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-31.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Лампа
+                  p.hover-details
+                    Просто лампа, ничего более
+      include ./footer.jade
+      

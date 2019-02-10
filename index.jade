@@ -1,0 +1,199 @@
+//output:index.html
+- var url = "index"
+doctype html
+html(lang='en', dir='ltr')
+  head
+    meta(charset='utf-8')
+    title Главная страница
+    link(rel='stylesheet', href='css/styles.css')
+  body
+    .container
+      include ./navbar.jade
+      .body
+        .slider
+          .slider-content
+            h3.tag Популярное
+            h2.name Пуфик
+            p.details
+              Практический опыт показывает, что выбранный нами
+              инновационный путь  играет важную роль в формировании...
+            a.btn(href='product.html') Заказать
+          .dots
+            a(href='#')
+            a.active(href='#')
+            a(href='#')
+        .featured-production.row
+          .row-header
+            .tab-control
+              ul
+                li.active
+                  a(href="#") Популярное
+                li
+                  a(href="#") Новинки
+            .right-link
+              a(href="products.html") Просмотреть еще
+          .row-content
+            .product-gallery
+              .one-fourth-gallery-item
+                img(alt="picture", width=270, height=270, src="img/product-1.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Лампа
+                  p.hover-details
+                    Просто лампа, ничего более
+              .one-fourth-gallery-item
+                img(alt="picture", width=270, height=270, src="img/product-2.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Стулья
+                  p.hover-details
+                    Просто стулья, ничего более
+              .one-fourth-gallery-item
+                img(alt="picture", width=270, height=270, src="img/product-3.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Чайник
+                  p.hover-details
+                    Просто чайник, ничего более
+              .one-fourth-gallery-item
+                img(alt="picture", width=270, height=270, src="img/product-4.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Стул
+                  p.hover-details
+                    Просто стул, ничего более
+        .promo-product.row.full-width
+          .one-half-item
+            img(alt="picture", width=683, height=683, src="img/promo-img1.jpg")
+            .item-content
+              h3.tag Эксклюзив
+              h2.name Стул
+              p.details
+                Практический опыт показывает, что выбранный нами
+                инновационный путь  играет важную роль в формировании...
+              a.btn(href='#') Заказать
+          .one-half-item
+            img(alt="picture", width=683, height=683, src="img/promo-img.jpg")
+            .item-content
+              h3.tag Эксклюзив
+              h2.name Кресло
+              p.details
+                Практический опыт показывает, что выбранный нами
+                инновационный путь  играет важную роль в формировании...
+              a.btn(href='#') Заказать
+        .trending-products.row
+          .row-header
+            h2.title Популярные продукты
+            .right-link
+              a(href="products.html") Просмотреть еще
+          .row-content
+            .product-gallery
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-11.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Лампа
+                  p.hover-details
+                    Просто лампа, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-21.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Стул
+                  p.hover-details
+                    Просто стул, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-31.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Лампа
+                  p.hover-details
+                    Просто лампа, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-4.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Стул
+                  p.hover-details
+                    Просто стул, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-5.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Ступка
+                  p.hover-details
+                    Просто ступка, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-6.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Ваза
+                  p.hover-details
+                    Просто ваза, ничего более
+        .hot-deals.row.full-width
+          img(alt="picture", width=1366, height=800, src="img/slider.jpg")
+          .slider-content
+            h3.tag.red Горячее предложение
+            h2.name Стол
+            p.details
+              Практический опыт показывает, что выбранный нами
+              инновационный путь  играет важную роль в формировании...
+            a.btn(href='product.html') Заказать
+          .dots
+            a(href='#')
+            a.active(href='#')
+            a(href='#')
+        .exclusive-product.row
+          .first-product
+            img(alt="picture", width=570, height=570, src="img/product-1-lg.jpg")
+            .first-product-content
+              h3.tag Эксклюзивно
+              h2.name Подушка
+              p.details
+                Практический опыт показывает, что выбранный нами
+                инновационный путь  играет важную роль в формировании...
+              a.btn(href='#') Заказать
+          .other-products
+            .other-product-item
+              img(alt="picture", width=270, height=270, src="img/product-2-sm.jpg")
+              .hover
+                a(href="product.html").hover-link
+                h3.hover-name Лампа
+                p.hover-details
+                  Просто лампа, ничего более
+            .other-product-item
+              img(alt="picture", width=270, height=270, src="img/product-3-sm.jpg")
+              .hover
+                a(href="product.html").hover-link
+                h3.hover-name Диван
+                p.hover-details
+                  Просто диван, ничего более
+            .other-product-item
+              img(alt="picture", width=270, height=270, src="img/product-4-sm.jpg")
+              .hover
+                a(href="product.html").hover-link
+                h3.hover-name Часы
+                p.hover-details
+                  Просто часы, ничего более
+            .other-product-item
+              img(alt="picture", width=270, height=270, src="img/product-5-sm.jpg")
+              .hover
+                a(href="product.html").hover-link
+                h3.hover-name Люстра
+                p.hover-details
+                  Просто люстра, ничего более
+        .mobile-app.row.full-width
+          .mobile-app-content
+            h3.tag Мобильное приложение
+            h2.name Ищи. Следи. Лайкай.
+            p.details
+              Сохраняй в избранных и будь на стиле.
+            ul.app-links
+              li
+                a(href="#")
+                  img(alt="picture", width=135, height=40, src="img/app-store.png")
+              li
+                a(href="#")
+                  img(alt="picture", width=135, height=40, src="img/google-play.png")
+      include ./footer.jade
+      

@@ -1,0 +1,17 @@
+.navbar
+  a.logo(href='#')
+    img(src='img/logo.png', alt='logo')
+  ul.menu
+    li
+      a(class={active: url === 'index'} href='index.html') ГЛАВНАЯ
+    li
+      a(class={active: url === 'products' || url === 'product'} href='products.html') ПРОДУКТЫ
+    li
+      a(href='#') ИСТОРИЯ
+    li
+      a(href='#') НАШИ РАБОТЫ
+    li
+      a(class={active: url === 'contacts'} href='contacts.html') КОНТАКТЫ
+    li
+      a(href='#')
+        img.search(src='img/search.png', alt='search') 

@@ -1,0 +1,137 @@
+//output:products.html
+- var url = "products"
+doctype html
+html(lang='en', dir='ltr')
+  head
+    meta(charset='utf-8')
+    title Главная страница
+    link(rel='stylesheet', href='css/styles.css')
+  body
+    .container
+      include ./navbar.jade
+      .body
+        .hero
+          h1.hero-title Каталог продуктов
+        .production-catalog.row
+          .row-header
+            .tab-control
+              ul
+                li.active
+                  a(href="#") Все
+                li
+                  a(href="#") Дом
+                li
+                  a(href="#") Офис
+                li
+                  a(href="#") Прочее
+                li
+                  a(href="#") Современное
+                li
+                  a(href="#") Классическое
+          .row-content
+            .product-gallery
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-11.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Лампа
+                  p.hover-details
+                    Просто лампа, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-21.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Стул
+                  p.hover-details
+                    Просто стул, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-31.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Лампа
+                  p.hover-details
+                    Просто лампа, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-4.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Стул
+                  p.hover-details
+                    Просто стул, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-5.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Ступка
+                  p.hover-details
+                    Просто ступка, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-6.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Ваза
+                  p.hover-details
+                    Просто ваза, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-11.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Лампа
+                  p.hover-details
+                    Просто лампа, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-21.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Стул
+                  p.hover-details
+                    Просто стул, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-31.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Лампа
+                  p.hover-details
+                    Просто лампа, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-4.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Стул
+                  p.hover-details
+                    Просто стул, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-5.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Ступка
+                  p.hover-details
+                    Просто ступка, ничего более
+              .one-third-gallery-item
+                img(alt="picture", width=370, height=370, src="img/product-6.jpg")
+                .hover
+                  a(href="product.html").hover-link
+                  h3.hover-name Ваза
+                  p.hover-details
+                    Просто ваза, ничего более
+        .promo-product.row.full-width
+          .one-half-item
+            img(alt="picture", width=683, height=683, src="img/promo-img1.jpg")
+            .item-content
+              h3.tag Эксклюзив
+              h2.name Стул
+              p.details
+                Практический опыт показывает, что выбранный нами
+                инновационный путь  играет важную роль в формировании...
+              a.btn(href='product.html') Заказать
+          .one-half-item
+            img(alt="picture", width=683, height=683, src="img/promo-img.jpg")
+            .item-content
+              h3.tag Эксклюзив
+              h2.name Кресло
+              p.details
+                Практический опыт показывает, что выбранный нами
+                инновационный путь  играет важную роль в формировании...
+              a.btn(href='product.html') Заказать
+      include ./footer.jade
+      
